@@ -1,0 +1,20 @@
+{
+  "name": "api-with-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest --config jest.config.cjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "jest": "^27.0.6",
+    "jest-config": "^27.0.6"
+  },
+  "dependencies": {
+    "@jest/globals": "^27.0.6"
+  }
+}
