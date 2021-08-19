@@ -9,12 +9,11 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "axios": "^0.21.1",
     "jest": "^27.0.6",
-    "jest-config": "^27.0.6"
-  },
-  "dependencies": {
-    "@jest/globals": "^27.0.6"
+    "jest-config": "^27.0.6",
+    "@jest/globals": "^27.0.6",
+    "eslint": "7.32.0"
   }
 }
