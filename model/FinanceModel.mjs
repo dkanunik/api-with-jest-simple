@@ -2,7 +2,7 @@ import AppConfig from '../configs/AppConfig.cjs';
 
 import axios from 'axios';
 
-class Finance {
+class FinanceModel {
 
     //TODO: this is the bad method that should be replaced by getFinanceData method
     static async getFinanceDataForAAPL() {
@@ -29,4 +29,4 @@ class Finance {
     }
 }
 
-export default Finance;
+export default FinanceModel;

@@ -1,30 +1,30 @@
-import Finance from '../model/Finance.mjs';
+import FinanceModel from '../model/FinanceModel.mjs';
 
-describe('As a Finance API user', () => {
+describe('As a FinanceModel API user', () => {
     describe('I have to get HTTP response code', () => {
-        xtest('200 for a valid range', async () => {
+        xtest('200 for a valid range', async() => {
 
-            //TODO: replace this method with Finance.getFinanceData(...) method
+            //TODO: replace this method with FinanceModel.getFinanceData(...) method
             // to be able to define different test conditions:
             // - company
             // - region
             // - interval
             // - range
-            let { status } = await Finance.getFinanceDataForAAPL();
+            const { status } = await FinanceModel.getFinanceDataForAAPL();
             expect(status).toBe(200);
         });
 
-        xtest('422 for a invalid range', async () => {
+        xtest('422 for a invalid range', async() => {
             // TODO: put required parameter to simulate the required test condition
-            let { status } = await Finance.getFinanceData();
+            const { status } = await FinanceModel.getFinanceData();
 
             //  TODO: insert verifications
             // ...
         });
 
-        xtest('404 for a nonexistent company', async () => {
+        xtest('404 for a nonexistent company', async() => {
             // TODO: put required parameter to simulate the required test condition
-            let { status } = await Finance.getFinanceData();
+            const { status } = await FinanceModel.getFinanceData();
 
             //  TODO: insert verifications
             // ...
@@ -32,13 +32,13 @@ describe('As a Finance API user', () => {
     });
 
     describe('I have to get values for response headers', () => {
-        test('content-type', async () => {
-            let { headers } = await Finance.getFinanceData();
+        test('content-type', async() => {
+            const { headers } = await FinanceModel.getFinanceData();
             expect(headers['content-type']).toBe('application/json;charset=utf-8');
         });
 
-        xtest('x-request-id', async () => {
-            let { headers } = await Finance.getFinanceData();
+        xtest('x-request-id', async() => {
+            const { headers } = await FinanceModel.getFinanceData();
 
             //  TODO: insert verifications for "x-request-id" header
             //  You have to use regular expression to verify a headers unique value:
