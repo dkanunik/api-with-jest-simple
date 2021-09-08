@@ -10,7 +10,6 @@ class FinanceModel {
         try {
             return await axios.get(AppConfig.baseUrl + params);
         } catch (e) {
-            console.log(`Request [${AppConfig.baseUrl}${params}] returned: `);
             return e.response;
         }
     }
@@ -23,7 +22,6 @@ class FinanceModel {
         try {
             return await axios.get(AppConfig.baseUrl + params);
         } catch (e) {
-            console.log(`Request [${AppConfig.baseUrl}${params}] returned: `);
             return e.response;
         }
     }
