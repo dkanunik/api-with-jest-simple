@@ -32,7 +32,7 @@ describe('As a FinanceModel API user', () => {
     });
 
     describe('I have to get values for response headers', () => {
-        test('content-type', async() => {
+        xtest('content-type', async() => {
             const { headers } = await FinanceModel.getFinanceData();
             expect(headers['content-type']).toBe('application/json;charset=utf-8');
         });
