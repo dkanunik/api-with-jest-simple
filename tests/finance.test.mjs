@@ -1,4 +1,4 @@
-import FinanceModel from '../model/FinanceModel.mjs';
+import FinanceModel from '../model/FinanceModel';
 
 describe('As a FinanceModel API user', () => {
     describe('I have to get HTTP response code', () => {
